@@ -24,3 +24,43 @@ a {
     font-weight: normal;
     width: fit-content;
 }
+.mainpage {
+    width: 80%;
+    margin: 0 auto;
+}
+.maintitle {
+    background-color: #6647BF;
+    
+    margin: 30px auto;
+}
+.mainbuttons {
+    width: 95%;
+    margin: 0 auto;
+}
+.mainbuttons div {
+    background-color: #6647BF;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+}
+.mainbuttons a {
+    background-color: #6647BF;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    font-size: 40px;
+}
+h1 {
+text-align: center;
+font-size: 80px;
+}
+h2 {
+text-align: center;
+font-size: 50px;
+margin: 0 8%;
+}
+h3 {
+    font-size: 40px;
+}
