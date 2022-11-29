@@ -34,8 +34,9 @@ a {
     margin: 30px auto;
 }
 .mainbuttons {
-    width: 95%;
+    width: 75%;
     margin: 0 auto;
+    display: flex;
 }
 .mainbuttons div {
     background-color: #6647BF;
@@ -43,6 +44,7 @@ a {
     width: fit-content;
     height: fit-content;
     padding: 5px 10px;
+    
 }
 .mainbuttons a {
     background-color: #6647BF;
@@ -51,6 +53,12 @@ a {
     height: fit-content;
     padding: 5px 10px;
     font-size: 40px;
+    
+    
+}
+
+.calcbutton{
+    margin: auto 0 auto auto;
 }
 .aboutitem
 {
@@ -73,4 +81,35 @@ h3 {
 }
 p {
     font-size: 26px;
+}
+.circle{
+    background-color: #13092D;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto 20px auto auto;
+}
+.inputname{
+    background-color: #6647BF;
+    width: 900px;
+    height: fit-content;
+    margin: 15px 0;
+    display: flex;
+}
+.inputname h2{
+    width: fit-content;
+    margin: auto 0 auto 20px;
+}
+form ul li {
+    display: flex;
+}
+input[type=text] {
+    margin: 15px 10px;
+    border: 3px solid #6647BF;
+    outline: none;
+    color: #6647BF;
+    font-size: 26px;
+    width: 100px;
+    padding: 0 5px;
 }
