@@ -67,6 +67,19 @@ a {
     width: 900px;
     height: fit-content;
 }
+.aboutdesc{
+    background-color: #6647BF;
+    margin: 15px 0;
+    width: 100%;
+    height: fit-content;
+}
+.bad {
+    background-color: #6647BF;
+    margin: 15px 0;
+    height: fit-content;
+    display: none;
+    width: 100%;
+}
 h1 {
 text-align: center;
 font-size: 80px;
@@ -94,15 +107,27 @@ p {
     background-color: #6647BF;
     width: 900px;
     height: fit-content;
+    
     margin: 15px 0;
     display: flex;
+}
+.inputval{
+    width: 100px;
+    margin: 15px 10px;
+    border: 3px solid #6647BF;
+    height: 74px;
+    box-sizing: border-box;
+}
+.inputval h2{
+    color: #6647BF;
 }
 .inputname h2{
     width: fit-content;
     margin: auto 0 auto 20px;
 }
-form ul li {
+ul li {
     display: flex;
+    flex-wrap: wrap;
 }
 input[type=text] {
     margin: 15px 10px;
@@ -112,4 +137,10 @@ input[type=text] {
     font-size: 26px;
     width: 100px;
     padding: 0 5px;
+}
+button {
+    background-color: #6647BF;
+    border: none;
+    padding: 5px 10px;
+    font-size: 40px;
 }
