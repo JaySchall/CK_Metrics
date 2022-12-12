@@ -9,47 +9,87 @@
         <header>
             <a href="index.html" class="logo">CK Metrics Suite</a>
         </header>
+        <main>
+            <section class="mainpage">
+                <ul>
+                    <li>
+                        <div class="aboutitem"><h2>Weighted Methods per Class</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires the number of methods in the class to be tested. 
+                                Weighted methods per class is a good indicator of how complex the software’s classes are and will help determine if these classes need to be broken down into smaller classes. 
+                                The higher the WMC is, the more time and effort it takes to develop and support the class. High WMC also leads to more errors/faults, as well as limits reuse.
+                                <br><br>
+                                To Calculate:<br>
+                                Simple Method: Count the number of methods in the class.<br>
+                                Complex Method: Weigh each method by size or complexity in the class.<br>
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="aboutitem"><h2>Depth of Inheritance Tree</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires a Class Inheritance Tree. 
+                                The depth of inheritance tree affects factors such as complexity, reuse, and inclination for errors. 
+                                The higher the depth of the inheritance tree, the more complex and harder to handle the software becomes. 
+                                A pro for higher depth inheritance trees is that it promotes reusability due to method inheritance.
+                                <br><br>
+                                To Calculate: <br>
+                                Follow the maximum inheritance path from the root class and count the number of classes it spans. 
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="aboutitem"><h2>Number of Children</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires a Class Inheritance Tree. 
+                                The number of children of a class indicates the breadth of inheritance (whereas DIT measures depth). 
+                                Depth is generally more acceptable as it promotes reusability of methods. A high level of NOC indicates a high level of reuse of the base class, which has the potential to affect a significant number of subclasses. 
+                                Therefore, a restructuring of subclasses may be in order to lower the level of complexity towards the top-end of the inheritance tree.
+                                <br><br>
+                                To Calculate: <br> 
+                                Count the number of subclasses immediately under the class being tested.
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="aboutitem"><h2>Coupling Between Object Classes</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires a set of Class-Responsibilities-Collaborations (CRC) cards. 
+                                The number of collaborations for a class indicates the level of coupling (or reliance) between classes. 
+                                The higher the level of coupling, the lower the possibility of reuse, and the higher the possibility for errors and difficulties when maintaining the class.
+                                <br><br>
+                                To Calculate:<br> 
+                                Count the number of collaborations for the class being tested.
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="aboutitem"><h2>Response for a Class</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires a set of Class-Responsibilities-Collaborations (CRC) cards. 
+                                The response for a class metric tests the greatest number of methods that will be called in response to a user’s input within a class. 
+                                A high level of RFC indicates high complexity, and therefore a higher chance for bugs and a long/complicated debugging process. 
+                                <br><br>
+                                To Calculate: <br>
+                                Count the number of methods that respond to a user’s input. Repeat for the number of inputs. Take the greatest number of methods that respond to a user's input.
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="aboutitem"><h2>Lack of Cohesion in Methods</h2></div>
+                        <div class="aboutdesc">
+                            <p>This metric requires a set of Class-Responsibilities-Collaborations (CRC) cards. 
+                                Lack of Cohesion in Methods tests for if the objectives being addressed within a class are related to each other as they should be. 
+                                It also tests for if similar objectives are within the same class. Classes with high LCOM values are error prone, difficult to test, and would be better served split into different classes. 
+                                <br><br>
+                                To Calculate: <br>
+                                Select an attribute and count the number of cards that access that attribute. Repeat for the number of attributes. Take the greatest number of cards.
+                                </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </body>
-    <main>
-        <section class="mainpage">
-            <ul>
-                <li>
-                    <div class="aboutitem"><h2>Weighted Methods per Class</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="aboutitem"><h2>Depth of Inheritance Tree</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="aboutitem"><h2>Number of Children</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="aboutitem"><h2>Coupling Between Object Classes</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="aboutitem"><h2>Response for a Class</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="aboutitem"><h2>Lack of Cohesion in Methods</h2></div>
-                    <div class="aboutdesc">
-                        <p>Text describing said thing</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
+    
 </html>

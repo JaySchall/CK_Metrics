@@ -20,7 +20,10 @@
                             <h2 id="WMC">0</h2>
                         </div>
                         <div id='WMCbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your WMC value is too high. 
+                                Consider lowering the number of methods per class and/or their complexity. 
+                                The higher the WMC is, the more time and effort it takes to develop and support the class. 
+                                High WMC also leads to more errors/faults, as well as limits reuse.</p>
                         </div>
                     </li>
                     <li>
@@ -31,7 +34,9 @@
                             <h2 id="DIT">0</h2>
                         </div>
                         <div id='DITbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your DIT value is too high. 
+                                Consider combining classes to reduce the use of inheritance. 
+                                The higher the depth of the inheritance tree, the more complex and harder to handle the software becomes.</p>
                         </div>
                     </li>
                     <li>
@@ -42,7 +47,9 @@
                             <h2 id="NOC">0</h2>
                         </div>
                         <div id='NOCbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your NOC value is too high. 
+                                Consider restructuring your subclasses by combining classes to reduce the level of complexity towards the top-end of the inheritance tree. 
+                                A high level of NOC indicates a high level of reuse of the base class, which has the potential to affect a significant number of subclasses.</p>
                         </div>
                     </li>
                     <li>
@@ -53,7 +60,9 @@
                             <h2 id="CBC">0</h2>
                         </div>
                         <div id='CBCbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your CBO value is too high. 
+                                Consider reducing the number of collaborator classes by combining similar collaborators. 
+                                The higher the level of coupling, the lower the possibility of reuse, and the higher the possibility for errors and difficulties when maintaining the class.</p>
                         </div>
                     </li>
                     <li>
@@ -64,7 +73,9 @@
                             <h2 id="RFC">0</h2>
                         </div>
                         <div id='RFCbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your RFC value is too high. 
+                                Consider reducing the number of operations that may execute in response to a user’s input. 
+                                A high level of RFC indicates high complexity, and therefore a higher chance for bugs and a long/complicated debugging process.</p>
                         </div>
                     </li>
                     <li>
@@ -75,10 +86,17 @@
                             <h2 id="LCM">0</h2>
                         </div>
                         <div id='LCMbad' class="bad">
-                            <p>Text why it's bad</p>
+                            <p>Your LCOM value is too high. 
+                                Consider reevaluating your class structure to ensure similar objectives are addressed in the same class, and disjoint objectives are addressed in different classes. 
+                                Classes with high LCOM values are error prone, difficult to test, and would be better served split into different classes.</p>
                         </div>
                     </li>
                 </ul>>
+                <div class="mainbuttons">
+                    <a href="calculation.html">
+                        Recalculate
+                    </a>
+                </div>
             </section>
         </main>
         <script src="results.js"></script>

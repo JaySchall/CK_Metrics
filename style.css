@@ -71,6 +71,7 @@ a {
     background-color: #6647BF;
     margin: 15px 0;
     width: 100%;
+    padding: 10px;
     height: fit-content;
 }
 .bad {
@@ -79,6 +80,7 @@ a {
     height: fit-content;
     display: none;
     width: 100%;
+    padding: 10px;
 }
 h1 {
 text-align: center;
@@ -103,11 +105,34 @@ p {
     text-align: center;
     margin: auto 20px auto auto;
 }
+.mini{
+    width: 400px;
+    border-color: #13092D;
+    height: fit-content;
+    border-width: 4px;
+    border-style: solid;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    left: 72%;
+}
+
+.circle p:hover + .mini{
+    transition: all .5s;
+    visibility: visible;
+    opacity: 1;
+
+}
+.mini p{
+    color: #6647BF;
+}
 .inputname{
     background-color: #6647BF;
     width: 900px;
     height: fit-content;
-    
+    position: relative;
     margin: 15px 0;
     display: flex;
 }
@@ -143,4 +168,7 @@ button {
     border: none;
     padding: 5px 10px;
     font-size: 40px;
+    border-radius: 10px;
+    margin: 20px 100px 20px 200px;
+    cursor: pointer;
 }
